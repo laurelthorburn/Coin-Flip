@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import Image from '../Image/Image';
+import './Coin.css';
 
 const Coin = () => {
 const coinArray = ["heads", "tail"];
@@ -20,12 +21,14 @@ setNumber(random);
 }
 
     return ( 
-    <>
+    <div className="Coin">
+        <div className="Coin--container">
     <h1>Let's Flip a Coin</h1>
-    <Image coin={coinArray[number]} />
+    {number !== "" && <Image coin={coinArray[number]} />}
     Out of {flips}, there have been {heads} heads and {tails} tails.
     <button onClick={handleFlip}>Flip Coin</button>
-    </> );
+    </div>
+    </div> );
 }
  
 export default Coin;

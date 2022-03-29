@@ -1,0 +1,11 @@
+.Coin{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.Coin--container{
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
