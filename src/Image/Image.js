@@ -1,7 +1,9 @@
+import './Image.css'
+
 const Image = ({coin}) => {
     return ( 
         <>
-        <img src={`https://tinyurl.com/react-coin-${coin}-jpg`} alt={coin} />
+        <img className="Image--coin" src={`https://tinyurl.com/react-coin-${coin}-jpg`} alt={coin} />
         </>
      );
 }
